@@ -5,6 +5,7 @@ An easy solution to page controllers
 
 # Usage
 Drag the folder to your project.<br>
+<img height=200 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/Folder.png">
 
 First create a controller of XTPageViewController: <br>
 ```objective-c
