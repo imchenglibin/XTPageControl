@@ -1,9 +1,9 @@
 # XTPageControl
 An easy solution to page controllers
 
-# Overview
+## Overview
 
-# Usage
+## Usage
 Drag the folder to your project.<br>
 <img height=200 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/Folder.png">
 
@@ -28,3 +28,6 @@ Then you have to implements the data source delegate to customize the pages and 
 @end
 ```
 For more detail usage of the XTPageViewController refer to the demo in this project.
+
+## License
+This project use `MIT` license, for more details refer to `LICENSE` file
