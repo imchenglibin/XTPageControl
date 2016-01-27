@@ -2,6 +2,14 @@
 An easy solution to page controllers
 
 ## Overview
+<img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_1.png">
+<img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_2.png">
+<img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_3.png">
+<img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_4.png">
+<img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_5.png">
+<img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_6.png">
+<img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_7.png">
+<img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_8.png">
 
 ## Usage
 Drag the folder to your project.<br>
