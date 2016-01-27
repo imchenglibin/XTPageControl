@@ -146,7 +146,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
     
     self.underlineView.frame = CGRectMake(0, [self.topLayoutGuide length] + self.tabBarHeight, self.view.bounds.size.width, 1.0);
     
-    self.pageScrollView.frame = CGRectMake(0, [self.topLayoutGuide length] + self.tabBarHeight + 1.0, self.view.bounds.size.width, self.view.bounds.size.height - self.tabBarHeight - 1.0);
+    self.pageScrollView.frame = CGRectMake(0, [self.topLayoutGuide length] + self.tabBarHeight + 1.0, self.view.bounds.size.width, self.view.bounds.size.height - self.tabBarHeight - 1.0 - [self.topLayoutGuide length]);
     
     if (self.dataSource) {
         NSInteger numberOfPages = [self.dataSource numberOfPages];
