@@ -2,6 +2,7 @@
 An easy solution to page controllers
 
 ## Overview
+<img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_0.png">
 <img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_1.png">
 <img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_2.png">
 <img height=500 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/usage_3.png">
