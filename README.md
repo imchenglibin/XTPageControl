@@ -16,7 +16,11 @@ An easy solution to page controllers
 Drag the folder to your project.<br>
 <img height=200 src="https://github.com/imchenglibin/XTPageControl/blob/master/Images/Folder.png">
 
-First create a controller of XTPageViewController: <br>
+```objective-c
+#import "XTPageViewController.h"
+```
+
+Create a controller of XTPageViewController: <br>
 ```objective-c
 - (instancetype)initWithTabBarStyle:(XTTabBarStyle)style;
 ```
