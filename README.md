@@ -31,9 +31,16 @@ typedef NS_ENUM(NSInteger, XTTabBarStyle) {
 Then you have to implements the data source delegate to customize the pages and tabBar items:<br>
 ```objective-c
 @protocol XTPageViewControllerDataSource <NSObject>
-- (NSInteger)numberOfPages;//the number of pages
-- (NSString*)titleOfPage:(NSInteger)page;//the title for page
-- (UIViewController*)constrollerOfPage:(NSInteger)page;//the controller for page
+
+//the number of pages
+- (NSInteger)numberOfPages;
+
+//the title for the page
+- (NSString*)titleOfPage:(NSInteger)page;
+
+//the controller for the page
+- (UIViewController*)constrollerOfPage:(NSInteger)page;
+
 @end
 ```
 For more detail usage of the XTPageViewController refer to the demo in this project.

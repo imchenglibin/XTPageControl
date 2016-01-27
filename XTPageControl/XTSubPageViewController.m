@@ -2,8 +2,9 @@
 //  XTTableViewController.m
 //  XTPageControl
 //
-//  Created by admin on 16/1/26.
+//  Created by imchenglibin on 16/1/26.
 //  Copyright © 2016年 xt. All rights reserved.
+//  https://github.com/imchenglibin/XTPageControl
 //
 
 #import "XTSubPageViewController.h"
