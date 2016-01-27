@@ -21,7 +21,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     XTMainViewController *rootController = [[XTMainViewController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rootController];
-    navController.navigationBar.translucent = NO;
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;

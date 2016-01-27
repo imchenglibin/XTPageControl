@@ -101,20 +101,19 @@
             UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo"]];
             imageView.frame = CGRectMake(0, 0, 50, 0);
             imageView.contentMode = UIViewContentModeScaleAspectFit;
-            imageView.backgroundColor = [UIColor groupTableViewBackgroundColor];
             pageViewController.tabBarLeftItemView = imageView;
+            pageViewController.forceLeftAligment = YES;
             pageViewController.dataSource = self;
             [self.navigationController pushViewController:pageViewController animated:YES];
         }
             break;
         case 6:
         {
-            _numberOfPages = 2;
+            _numberOfPages = 10;
             XTPageViewController *pageViewController = [[XTPageViewController alloc] initWithTabBarStyle:XTTabBarStyleCursorUnderline];
-            UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo"]];
-            imageView.frame = CGRectMake(0, 0, 50, 0);
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Arrow"]];
+            imageView.frame = CGRectMake(0, 0, 20, 0);
             imageView.contentMode = UIViewContentModeScaleAspectFit;
-            imageView.backgroundColor = [UIColor groupTableViewBackgroundColor];
             pageViewController.tabBarRightItemView = imageView;
             pageViewController.dataSource = self;
             [self.navigationController pushViewController:pageViewController animated:YES];
@@ -123,19 +122,17 @@
         
         case 7:
         {
-            _numberOfPages = 2;
+            _numberOfPages = 10;
             XTPageViewController *pageViewController = [[XTPageViewController alloc] initWithTabBarStyle:XTTabBarStyleCursorHollow];
             UIImageView *leftImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo"]];
             leftImageView.frame = CGRectMake(0, 0, 50, 0);
             leftImageView.contentMode = UIViewContentModeScaleAspectFit;
-            leftImageView.backgroundColor = [UIColor groupTableViewBackgroundColor];
             pageViewController.tabBarLeftItemView = leftImageView;
             
             
-            UIImageView *rightImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo"]];
-            rightImageView.frame = CGRectMake(0, 0, 50, 0);
+            UIImageView *rightImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Arrow"]];
+            rightImageView.frame = CGRectMake(0, 0, 20, 0);
             rightImageView.contentMode = UIViewContentModeScaleAspectFit;
-            rightImageView.backgroundColor = [UIColor groupTableViewBackgroundColor];
             pageViewController.tabBarRightItemView = rightImageView;
             
             pageViewController.dataSource = self;
