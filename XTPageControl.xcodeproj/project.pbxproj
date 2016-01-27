@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844107541C5853680028D73A /* XTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844107531C5853680028D73A /* XTMainViewController.m */; };
+		84DB6FD61C56FBAD00902D18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB6FD51C56FBAD00902D18 /* main.m */; };
+		84DB6FD91C56FBAD00902D18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB6FD81C56FBAD00902D18 /* AppDelegate.m */; };
+		84DB6FE11C56FBAD00902D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DB6FE01C56FBAD00902D18 /* Assets.xcassets */; };
+		84DB6FE41C56FBAD00902D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DB6FE21C56FBAD00902D18 /* LaunchScreen.storyboard */; };
+		84DB700A1C56FC7400902D18 /* XTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB70091C56FC7400902D18 /* XTTabBar.m */; };
+		84DB700D1C57042E00902D18 /* XTPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB700C1C57042E00902D18 /* XTPageViewController.m */; };
+		84DB70101C5708A000902D18 /* XTTabBarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB700F1C5708A000902D18 /* XTTabBarScrollView.m */; };
+		84EDA12A1C57CD96003A70EA /* XTSubPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDA1291C57CD96003A70EA /* XTSubPageViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84DB6FEB1C56FBAD00902D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84DB6FC91C56FBAD00902D18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DB6FD01C56FBAD00902D18;
+			remoteInfo = XTPageControl;
+		};
+		84DB6FF61C56FBAD00902D18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84DB6FC91C56FBAD00902D18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DB6FD01C56FBAD00902D18;
+			remoteInfo = XTPageControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844107521C5853680028D73A /* XTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTMainViewController.h; sourceTree = "<group>"; };
+		844107531C5853680028D73A /* XTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTMainViewController.m; sourceTree = "<group>"; };
+		84DB6FD11C56FBAD00902D18 /* XTPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DB6FD51C56FBAD00902D18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84DB6FD71C56FBAD00902D18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84DB6FD81C56FBAD00902D18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84DB6FE01C56FBAD00902D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84DB6FE31C56FBAD00902D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84DB6FE51C56FBAD00902D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DB6FEA1C56FBAD00902D18 /* XTPageControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTPageControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DB6FF51C56FBAD00902D18 /* XTPageControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTPageControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DB70081C56FC7400902D18 /* XTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBar.h; sourceTree = "<group>"; };
+		84DB70091C56FC7400902D18 /* XTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTabBar.m; sourceTree = "<group>"; };
+		84DB700B1C57042E00902D18 /* XTPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPageViewController.h; sourceTree = "<group>"; };
+		84DB700C1C57042E00902D18 /* XTPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPageViewController.m; sourceTree = "<group>"; };
+		84DB700E1C5708A000902D18 /* XTTabBarScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBarScrollView.h; sourceTree = "<group>"; };
+		84DB700F1C5708A000902D18 /* XTTabBarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTabBarScrollView.m; sourceTree = "<group>"; };
+		84DB70111C5770F500902D18 /* XTTabBarStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTTabBarStyle.h; sourceTree = "<group>"; };
+		84EDA1281C57CD96003A70EA /* XTSubPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSubPageViewController.h; sourceTree = "<group>"; };
+		84EDA1291C57CD96003A70EA /* XTSubPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSubPageViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84DB6FCE1C56FBAD00902D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DB6FE71C56FBAD00902D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DB6FF21C56FBAD00902D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84DB6FC81C56FBAD00902D18 = {
+			isa = PBXGroup;
+			children = (
+				84DB6FD31C56FBAD00902D18 /* XTPageControl */,
+				84DB6FD21C56FBAD00902D18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84DB6FD21C56FBAD00902D18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84DB6FD11C56FBAD00902D18 /* XTPageControl.app */,
+				84DB6FEA1C56FBAD00902D18 /* XTPageControlTests.xctest */,
+				84DB6FF51C56FBAD00902D18 /* XTPageControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84DB6FD31C56FBAD00902D18 /* XTPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				84DB70071C56FC0100902D18 /* XTPageControl */,
+				84DB6FD71C56FBAD00902D18 /* AppDelegate.h */,
+				84DB6FD81C56FBAD00902D18 /* AppDelegate.m */,
+				84EDA1281C57CD96003A70EA /* XTSubPageViewController.h */,
+				84EDA1291C57CD96003A70EA /* XTSubPageViewController.m */,
+				844107521C5853680028D73A /* XTMainViewController.h */,
+				844107531C5853680028D73A /* XTMainViewController.m */,
+				84DB6FE01C56FBAD00902D18 /* Assets.xcassets */,
+				84DB6FE21C56FBAD00902D18 /* LaunchScreen.storyboard */,
+				84DB6FE51C56FBAD00902D18 /* Info.plist */,
+				84DB6FD41C56FBAD00902D18 /* Supporting Files */,
+			);
+			path = XTPageControl;
+			sourceTree = "<group>";
+		};
+		84DB6FD41C56FBAD00902D18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84DB6FD51C56FBAD00902D18 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84DB70071C56FC0100902D18 /* XTPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				84DB70081C56FC7400902D18 /* XTTabBar.h */,
+				84DB70091C56FC7400902D18 /* XTTabBar.m */,
+				84DB700B1C57042E00902D18 /* XTPageViewController.h */,
+				84DB700C1C57042E00902D18 /* XTPageViewController.m */,
+				84DB700E1C5708A000902D18 /* XTTabBarScrollView.h */,
+				84DB700F1C5708A000902D18 /* XTTabBarScrollView.m */,
+				84DB70111C5770F500902D18 /* XTTabBarStyle.h */,
+			);
+			path = XTPageControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84DB6FD01C56FBAD00902D18 /* XTPageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DB6FFE1C56FBAD00902D18 /* Build configuration list for PBXNativeTarget "XTPageControl" */;
+			buildPhases = (
+				84DB6FCD1C56FBAD00902D18 /* Sources */,
+				84DB6FCE1C56FBAD00902D18 /* Frameworks */,
+				84DB6FCF1C56FBAD00902D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTPageControl;
+			productName = XTPageControl;
+			productReference = 84DB6FD11C56FBAD00902D18 /* XTPageControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84DB6FE91C56FBAD00902D18 /* XTPageControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DB70011C56FBAD00902D18 /* Build configuration list for PBXNativeTarget "XTPageControlTests" */;
+			buildPhases = (
+				84DB6FE61C56FBAD00902D18 /* Sources */,
+				84DB6FE71C56FBAD00902D18 /* Frameworks */,
+				84DB6FE81C56FBAD00902D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84DB6FEC1C56FBAD00902D18 /* PBXTargetDependency */,
+			);
+			name = XTPageControlTests;
+			productName = XTPageControlTests;
+			productReference = 84DB6FEA1C56FBAD00902D18 /* XTPageControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84DB6FF41C56FBAD00902D18 /* XTPageControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DB70041C56FBAD00902D18 /* Build configuration list for PBXNativeTarget "XTPageControlUITests" */;
+			buildPhases = (
+				84DB6FF11C56FBAD00902D18 /* Sources */,
+				84DB6FF21C56FBAD00902D18 /* Frameworks */,
+				84DB6FF31C56FBAD00902D18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84DB6FF71C56FBAD00902D18 /* PBXTargetDependency */,
+			);
+			name = XTPageControlUITests;
+			productName = XTPageControlUITests;
+			productReference = 84DB6FF51C56FBAD00902D18 /* XTPageControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84DB6FC91C56FBAD00902D18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = xt;
+				TargetAttributes = {
+					84DB6FD01C56FBAD00902D18 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					84DB6FE91C56FBAD00902D18 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 84DB6FD01C56FBAD00902D18;
+					};
+					84DB6FF41C56FBAD00902D18 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 84DB6FD01C56FBAD00902D18;
+					};
+				};
+			};
+			buildConfigurationList = 84DB6FCC1C56FBAD00902D18 /* Build configuration list for PBXProject "XTPageControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84DB6FC81C56FBAD00902D18;
+			productRefGroup = 84DB6FD21C56FBAD00902D18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84DB6FD01C56FBAD00902D18 /* XTPageControl */,
+				84DB6FE91C56FBAD00902D18 /* XTPageControlTests */,
+				84DB6FF41C56FBAD00902D18 /* XTPageControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84DB6FCF1C56FBAD00902D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DB6FE41C56FBAD00902D18 /* LaunchScreen.storyboard in Resources */,
+				84DB6FE11C56FBAD00902D18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DB6FE81C56FBAD00902D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DB6FF31C56FBAD00902D18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84DB6FCD1C56FBAD00902D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844107541C5853680028D73A /* XTMainViewController.m in Sources */,
+				84DB70101C5708A000902D18 /* XTTabBarScrollView.m in Sources */,
+				84DB700A1C56FC7400902D18 /* XTTabBar.m in Sources */,
+				84DB700D1C57042E00902D18 /* XTPageViewController.m in Sources */,
+				84DB6FD91C56FBAD00902D18 /* AppDelegate.m in Sources */,
+				84DB6FD61C56FBAD00902D18 /* main.m in Sources */,
+				84EDA12A1C57CD96003A70EA /* XTSubPageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DB6FE61C56FBAD00902D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DB6FF11C56FBAD00902D18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84DB6FEC1C56FBAD00902D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DB6FD01C56FBAD00902D18 /* XTPageControl */;
+			targetProxy = 84DB6FEB1C56FBAD00902D18 /* PBXContainerItemProxy */;
+		};
+		84DB6FF71C56FBAD00902D18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DB6FD01C56FBAD00902D18 /* XTPageControl */;
+			targetProxy = 84DB6FF61C56FBAD00902D18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84DB6FE21C56FBAD00902D18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84DB6FE31C56FBAD00902D18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84DB6FFC1C56FBAD00902D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84DB6FFD1C56FBAD00902D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84DB6FFF1C56FBAD00902D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XTPageControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xt.XTPageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84DB70001C56FBAD00902D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XTPageControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xt.XTPageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84DB70021C56FBAD00902D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XTPageControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xt.XTPageControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTPageControl.app/XTPageControl";
+			};
+			name = Debug;
+		};
+		84DB70031C56FBAD00902D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XTPageControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xt.XTPageControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTPageControl.app/XTPageControl";
+			};
+			name = Release;
+		};
+		84DB70051C56FBAD00902D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XTPageControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xt.XTPageControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XTPageControl;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		84DB70061C56FBAD00902D18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = XTPageControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xt.XTPageControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XTPageControl;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84DB6FCC1C56FBAD00902D18 /* Build configuration list for PBXProject "XTPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DB6FFC1C56FBAD00902D18 /* Debug */,
+				84DB6FFD1C56FBAD00902D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DB6FFE1C56FBAD00902D18 /* Build configuration list for PBXNativeTarget "XTPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DB6FFF1C56FBAD00902D18 /* Debug */,
+				84DB70001C56FBAD00902D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DB70011C56FBAD00902D18 /* Build configuration list for PBXNativeTarget "XTPageControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DB70021C56FBAD00902D18 /* Debug */,
+				84DB70031C56FBAD00902D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DB70041C56FBAD00902D18 /* Build configuration list for PBXNativeTarget "XTPageControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DB70051C56FBAD00902D18 /* Debug */,
+				84DB70061C56FBAD00902D18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84DB6FC91C56FBAD00902D18 /* Project object */;
+}
