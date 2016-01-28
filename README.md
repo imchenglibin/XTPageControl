@@ -49,5 +49,8 @@ Then you have to implements the data source delegate to customize the pages and 
 ```
 For more detail usage of the XTPageViewController refer to the demo in this project.
 
+## Pod Support
+pod 'XTPageControl', :git => 'https://github.com/imchenglibin/XTPageControl.git'
+
 ## License
 This project use `MIT` license, for more details refer to `LICENSE` file
