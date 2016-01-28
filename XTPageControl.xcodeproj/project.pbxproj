@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		844107541C5853680028D73A /* XTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844107531C5853680028D73A /* XTMainViewController.m */; };
-		84DB6FD61C56FBAD00902D18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB6FD51C56FBAD00902D18 /* main.m */; };
-		84DB6FD91C56FBAD00902D18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB6FD81C56FBAD00902D18 /* AppDelegate.m */; };
-		84DB6FE11C56FBAD00902D18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DB6FE01C56FBAD00902D18 /* Assets.xcassets */; };
-		84DB6FE41C56FBAD00902D18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DB6FE21C56FBAD00902D18 /* LaunchScreen.storyboard */; };
-		84DB700A1C56FC7400902D18 /* XTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB70091C56FC7400902D18 /* XTTabBar.m */; };
-		84DB700D1C57042E00902D18 /* XTPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB700C1C57042E00902D18 /* XTPageViewController.m */; };
-		84DB70101C5708A000902D18 /* XTTabBarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DB700F1C5708A000902D18 /* XTTabBarScrollView.m */; };
-		84EDA12A1C57CD96003A70EA /* XTSubPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDA1291C57CD96003A70EA /* XTSubPageViewController.m */; };
+		84DFCE7A1C59BF360070664A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCE701C59BF360070664A /* AppDelegate.m */; };
+		84DFCE7B1C59BF360070664A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DFCE711C59BF360070664A /* Assets.xcassets */; };
+		84DFCE7C1C59BF360070664A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DFCE721C59BF360070664A /* LaunchScreen.storyboard */; };
+		84DFCE7D1C59BF360070664A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84DFCE741C59BF360070664A /* Info.plist */; };
+		84DFCE7E1C59BF360070664A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCE751C59BF360070664A /* main.m */; };
+		84DFCE7F1C59BF360070664A /* XTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCE771C59BF360070664A /* XTMainViewController.m */; };
+		84DFCE801C59BF360070664A /* XTSubPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCE791C59BF360070664A /* XTSubPageViewController.m */; };
+		84DFCE891C59BF410070664A /* XTPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCE831C59BF410070664A /* XTPageViewController.m */; };
+		84DFCE8A1C59BF410070664A /* XTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCE851C59BF410070664A /* XTTabBar.m */; };
+		84DFCE8B1C59BF410070664A /* XTTabBarScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCE871C59BF410070664A /* XTTabBarScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,26 +37,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		844107521C5853680028D73A /* XTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTMainViewController.h; sourceTree = "<group>"; };
-		844107531C5853680028D73A /* XTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTMainViewController.m; sourceTree = "<group>"; };
 		84DB6FD11C56FBAD00902D18 /* XTPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84DB6FD51C56FBAD00902D18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84DB6FD71C56FBAD00902D18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		84DB6FD81C56FBAD00902D18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84DB6FE01C56FBAD00902D18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		84DB6FE31C56FBAD00902D18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84DB6FE51C56FBAD00902D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DB6FEA1C56FBAD00902D18 /* XTPageControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTPageControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DB6FF51C56FBAD00902D18 /* XTPageControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTPageControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84DB70081C56FC7400902D18 /* XTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBar.h; sourceTree = "<group>"; };
-		84DB70091C56FC7400902D18 /* XTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTabBar.m; sourceTree = "<group>"; };
-		84DB700B1C57042E00902D18 /* XTPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPageViewController.h; sourceTree = "<group>"; };
-		84DB700C1C57042E00902D18 /* XTPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPageViewController.m; sourceTree = "<group>"; };
-		84DB700E1C5708A000902D18 /* XTTabBarScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBarScrollView.h; sourceTree = "<group>"; };
-		84DB700F1C5708A000902D18 /* XTTabBarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTabBarScrollView.m; sourceTree = "<group>"; };
-		84DB70111C5770F500902D18 /* XTTabBarStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTTabBarStyle.h; sourceTree = "<group>"; };
-		84EDA1281C57CD96003A70EA /* XTSubPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSubPageViewController.h; sourceTree = "<group>"; };
-		84EDA1291C57CD96003A70EA /* XTSubPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSubPageViewController.m; sourceTree = "<group>"; };
+		84DFCE6F1C59BF360070664A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84DFCE701C59BF360070664A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84DFCE711C59BF360070664A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84DFCE731C59BF360070664A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84DFCE741C59BF360070664A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DFCE751C59BF360070664A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84DFCE761C59BF360070664A /* XTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTMainViewController.h; sourceTree = "<group>"; };
+		84DFCE771C59BF360070664A /* XTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTMainViewController.m; sourceTree = "<group>"; };
+		84DFCE781C59BF360070664A /* XTSubPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSubPageViewController.h; sourceTree = "<group>"; };
+		84DFCE791C59BF360070664A /* XTSubPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSubPageViewController.m; sourceTree = "<group>"; };
+		84DFCE821C59BF410070664A /* XTPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPageViewController.h; sourceTree = "<group>"; };
+		84DFCE831C59BF410070664A /* XTPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPageViewController.m; sourceTree = "<group>"; };
+		84DFCE841C59BF410070664A /* XTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBar.h; sourceTree = "<group>"; };
+		84DFCE851C59BF410070664A /* XTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTabBar.m; sourceTree = "<group>"; };
+		84DFCE861C59BF410070664A /* XTTabBarScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBarScrollView.h; sourceTree = "<group>"; };
+		84DFCE871C59BF410070664A /* XTTabBarScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTabBarScrollView.m; sourceTree = "<group>"; };
+		84DFCE881C59BF410070664A /* XTTabBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTabBarStyle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +87,8 @@
 		84DB6FC81C56FBAD00902D18 = {
 			isa = PBXGroup;
 			children = (
-				84DB6FD31C56FBAD00902D18 /* XTPageControl */,
+				84DFCE811C59BF410070664A /* XTPageControl */,
+				84DFCE6E1C59BF360070664A /* XTPageControlDemo */,
 				84DB6FD21C56FBAD00902D18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,42 +103,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84DB6FD31C56FBAD00902D18 /* XTPageControl */ = {
+		84DFCE6E1C59BF360070664A /* XTPageControlDemo */ = {
 			isa = PBXGroup;
 			children = (
-				84DB70071C56FC0100902D18 /* XTPageControl */,
-				84DB6FD71C56FBAD00902D18 /* AppDelegate.h */,
-				84DB6FD81C56FBAD00902D18 /* AppDelegate.m */,
-				84EDA1281C57CD96003A70EA /* XTSubPageViewController.h */,
-				84EDA1291C57CD96003A70EA /* XTSubPageViewController.m */,
-				844107521C5853680028D73A /* XTMainViewController.h */,
-				844107531C5853680028D73A /* XTMainViewController.m */,
-				84DB6FE01C56FBAD00902D18 /* Assets.xcassets */,
-				84DB6FE21C56FBAD00902D18 /* LaunchScreen.storyboard */,
-				84DB6FE51C56FBAD00902D18 /* Info.plist */,
-				84DB6FD41C56FBAD00902D18 /* Supporting Files */,
+				84DFCE6F1C59BF360070664A /* AppDelegate.h */,
+				84DFCE701C59BF360070664A /* AppDelegate.m */,
+				84DFCE711C59BF360070664A /* Assets.xcassets */,
+				84DFCE721C59BF360070664A /* LaunchScreen.storyboard */,
+				84DFCE741C59BF360070664A /* Info.plist */,
+				84DFCE751C59BF360070664A /* main.m */,
+				84DFCE761C59BF360070664A /* XTMainViewController.h */,
+				84DFCE771C59BF360070664A /* XTMainViewController.m */,
+				84DFCE781C59BF360070664A /* XTSubPageViewController.h */,
+				84DFCE791C59BF360070664A /* XTSubPageViewController.m */,
 			);
-			path = XTPageControl;
+			path = XTPageControlDemo;
 			sourceTree = "<group>";
 		};
-		84DB6FD41C56FBAD00902D18 /* Supporting Files */ = {
+		84DFCE811C59BF410070664A /* XTPageControl */ = {
 			isa = PBXGroup;
 			children = (
-				84DB6FD51C56FBAD00902D18 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		84DB70071C56FC0100902D18 /* XTPageControl */ = {
-			isa = PBXGroup;
-			children = (
-				84DB70081C56FC7400902D18 /* XTTabBar.h */,
-				84DB70091C56FC7400902D18 /* XTTabBar.m */,
-				84DB700B1C57042E00902D18 /* XTPageViewController.h */,
-				84DB700C1C57042E00902D18 /* XTPageViewController.m */,
-				84DB700E1C5708A000902D18 /* XTTabBarScrollView.h */,
-				84DB700F1C5708A000902D18 /* XTTabBarScrollView.m */,
-				84DB70111C5770F500902D18 /* XTTabBarStyle.h */,
+				84DFCE821C59BF410070664A /* XTPageViewController.h */,
+				84DFCE831C59BF410070664A /* XTPageViewController.m */,
+				84DFCE841C59BF410070664A /* XTTabBar.h */,
+				84DFCE851C59BF410070664A /* XTTabBar.m */,
+				84DFCE861C59BF410070664A /* XTTabBarScrollView.h */,
+				84DFCE871C59BF410070664A /* XTTabBarScrollView.m */,
+				84DFCE881C59BF410070664A /* XTTabBarStyle.h */,
 			);
 			path = XTPageControl;
 			sourceTree = "<group>";
@@ -244,8 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DB6FE41C56FBAD00902D18 /* LaunchScreen.storyboard in Resources */,
-				84DB6FE11C56FBAD00902D18 /* Assets.xcassets in Resources */,
+				84DFCE7B1C59BF360070664A /* Assets.xcassets in Resources */,
+				84DFCE7C1C59BF360070664A /* LaunchScreen.storyboard in Resources */,
+				84DFCE7D1C59BF360070664A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,13 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844107541C5853680028D73A /* XTMainViewController.m in Sources */,
-				84DB70101C5708A000902D18 /* XTTabBarScrollView.m in Sources */,
-				84DB700A1C56FC7400902D18 /* XTTabBar.m in Sources */,
-				84DB700D1C57042E00902D18 /* XTPageViewController.m in Sources */,
-				84DB6FD91C56FBAD00902D18 /* AppDelegate.m in Sources */,
-				84DB6FD61C56FBAD00902D18 /* main.m in Sources */,
-				84EDA12A1C57CD96003A70EA /* XTSubPageViewController.m in Sources */,
+				84DFCE7F1C59BF360070664A /* XTMainViewController.m in Sources */,
+				84DFCE7E1C59BF360070664A /* main.m in Sources */,
+				84DFCE8B1C59BF410070664A /* XTTabBarScrollView.m in Sources */,
+				84DFCE891C59BF410070664A /* XTPageViewController.m in Sources */,
+				84DFCE8A1C59BF410070664A /* XTTabBar.m in Sources */,
+				84DFCE801C59BF360070664A /* XTSubPageViewController.m in Sources */,
+				84DFCE7A1C59BF360070664A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,10 +304,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84DB6FE21C56FBAD00902D18 /* LaunchScreen.storyboard */ = {
+		84DFCE721C59BF360070664A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				84DB6FE31C56FBAD00902D18 /* Base */,
+				84DFCE731C59BF360070664A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -405,7 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = XTPageControl/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/XTPageControlDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.xt.XTPageControl;
@@ -417,7 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = XTPageControl/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/XTPageControlDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.xt.XTPageControl;
