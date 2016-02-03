@@ -47,6 +47,16 @@ Then you have to implements the data source delegate to customize the pages and 
 
 @end
 ```
+If you want to customize the tabbar item width you should implement XTPageViewControllerDelegate
+```objective-c
+@protocol XTPageViewControllerDelegate <NSObject>
+
+//the custom width of tab bar item for page
+- (CGFloat)widthOfTabBarItemForPage:(NSInteger)page;
+
+@end
+```
+
 For more detail usage of the XTPageViewController refer to the demo in this project.
 
 ## Pod Support
