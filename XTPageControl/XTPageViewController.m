@@ -32,6 +32,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
 - (instancetype)init {
     if (self = [super init]) {
         _style = XTTabBarStyleCursorUnderline;
+        _tabBarHeight = kXTDefaultTabBarHeight;
     }
     return self;
 }
@@ -39,6 +40,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         _style = XTTabBarStyleCursorUnderline;
+        _tabBarHeight = kXTDefaultTabBarHeight;
     }
     return self;
 }
@@ -46,6 +48,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         _style = XTTabBarStyleCursorUnderline;
+        _tabBarHeight = kXTDefaultTabBarHeight;
     }
     return self;
 }
@@ -53,6 +56,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
 - (instancetype)initWithTabBarStyle:(XTTabBarStyle)style {
     if (self = [super init]) {
         _style = style;
+        _tabBarHeight = kXTDefaultTabBarHeight;
     }
     return self;
 }
@@ -90,7 +94,6 @@ static CGFloat kXTDefaultTabBarHeight = 35;
     if (self.parentViewController) {
         self.parentViewController.automaticallyAdjustsScrollViewInsets = NO;
     }
-    self.tabBarHeight = kXTDefaultTabBarHeight;
     NSInteger numberOfPages = [self.dataSource numberOfPages];
     NSMutableArray *titles = [NSMutableArray array];
     for (NSInteger i=0; i<numberOfPages; i++) {

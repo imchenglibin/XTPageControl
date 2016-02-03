@@ -209,7 +209,7 @@ static NSInteger kXTTabBarInvalidIndex = -1;
             button.frame = CGRectMake(left, 0, button.bounds.size.width, self.bounds.size.height);
             left += button.bounds.size.width + 2 * kXTTabBarItemMargin;
         }
-        [self setContentSize:CGSizeMake(totalWidth + (self.buttons.count + 1) * 2 *kXTTabBarItemMargin, self.bounds.size.height)];
+        [self setContentSize:CGSizeMake(totalWidth + (self.buttons.count + 1) * 2 * kXTTabBarItemMargin, self.bounds.size.height)];
     }
     
     if (!self.isAnimation && self.currentIndex != kXTTabBarInvalidIndex) {
