@@ -20,7 +20,7 @@
 
 @interface XTTabBarScrollView : UIScrollView
 
-- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andStyle:(XTTabBarStyle)style;
+- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andTabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths andStyle:(XTTabBarStyle)style;
 - (void)moveToIndex:(NSInteger)index;
 
 @property (assign, nonatomic) BOOL forceLeftAligment;

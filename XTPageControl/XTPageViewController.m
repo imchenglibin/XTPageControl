@@ -99,7 +99,14 @@ static CGFloat kXTDefaultTabBarHeight = 35;
     for (NSInteger i=0; i<numberOfPages; i++) {
         [titles addObject:[self.dataSource titleOfPage:i]];
     }
-    self.tabBar = [self createTabBar:titles style:style];
+    NSMutableArray *tabBarItemWidths;
+    if (self.delegate && [self.delegate conformsToProtocol:@protocol(XTPageViewControllerDelegate)]) {
+        tabBarItemWidths = [NSMutableArray array];
+        for (NSInteger i=0; i<numberOfPages; i++) {
+            [tabBarItemWidths addObject:[NSNumber numberWithDouble:[self.delegate widthOfTabBarItemForPage:i]]];
+        }
+    }
+    self.tabBar = [self createTabBar:titles tabBarItemWidths:tabBarItemWidths style:style];
     [self.view addSubview:self.tabBar];
     
     self.underlineView = [[UIView alloc] init];
@@ -118,8 +125,8 @@ static CGFloat kXTDefaultTabBarHeight = 35;
     [self.tabBar moveToIndex:0];
 }
 
-- (XTTabBar*)createTabBar:(NSArray<NSString*>*)titles style:(XTTabBarStyle)style {
-    XTTabBar* tabBar = [[XTTabBar alloc] initWithTitles:titles andStyle:style];
+- (XTTabBar*)createTabBar:(NSArray<NSString*>*)titles tabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths style:(XTTabBarStyle)style {
+    XTTabBar* tabBar = [[XTTabBar alloc] initWithTitles:titles andTabBarItemWidths:tabBarItemWidths andStyle:style];
     tabBar.tabBarDelegate = self;
     tabBar.forceLeftAligment = self.forceLeftAligment;
     if (self.tabBarCursorColor) {

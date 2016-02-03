@@ -16,6 +16,7 @@
 @interface XTTabBarScrollView()
 
 @property (strong, nonatomic) NSArray<NSString*> *titles;
+@property (strong, nonatomic) NSArray<NSNumber*> *tabBarItemWidths;
 @property (assign, nonatomic) XTTabBarStyle tabBarStyle;
 @property (strong, nonatomic) NSMutableArray *buttons;
 @property (strong, nonatomic) UIView *cursorView;
@@ -30,10 +31,11 @@ static CGFloat kXTTabBarItemMargin = 10;
 static CGFloat kXTTabBarItemFontSize = 14;
 static NSInteger kXTTabBarInvalidIndex = -1;
 
-- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andStyle:(XTTabBarStyle)style {
+- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andTabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths andStyle:(XTTabBarStyle)style {
     if (self = [super init]) {
         _tabBarStyle = style;
         _titles = titles;
+        _tabBarItemWidths = tabBarItemWidths;
         _titleColorNormal = kXTTabBarTitleColorNormal;
         _titleColorSelected = kXTTabBarTitleColorSelected;
         _cursorColor = kXTTabBarCursorColor;
@@ -51,6 +53,7 @@ static NSInteger kXTTabBarInvalidIndex = -1;
     self.showsVerticalScrollIndicator = NO;
     self.showsHorizontalScrollIndicator = NO;
     
+    NSMutableArray<NSNumber*> *buttonWidths = [NSMutableArray array];
     self.buttons = [NSMutableArray array];
     for (NSInteger i=0; i<self.titles.count; i++) {
         NSString *title = [self.titles objectAtIndex:i];
@@ -64,6 +67,11 @@ static NSInteger kXTTabBarInvalidIndex = -1;
         [button addTarget:self action:@selector(buttonEvent:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:button];
         [self.buttons addObject:button];
+        [buttonWidths addObject:[NSNumber numberWithFloat:button.bounds.size.width + kXTTabBarItemMargin * 2]];
+    }
+    
+    if (!self.tabBarItemWidths || self.tabBarItemWidths.count == 0) {
+        self.tabBarItemWidths = buttonWidths;
     }
     
     self.cursorView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, kXTTabBarItemMargin)];
@@ -181,40 +189,19 @@ static NSInteger kXTTabBarInvalidIndex = -1;
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
-    CGFloat maxItemWidth = 0;
-    CGFloat totalWidth = 0;
-    
-    for (UIButton *button in self.buttons) {
-        totalWidth += button.bounds.size.width;
-        if (maxItemWidth < button.bounds.size.width) {
-            maxItemWidth = button.bounds.size.width;
-        }
+    CGFloat left = 0;
+    for (int i=0; i<self.buttons.count; i++) {
+        UIButton *button = [self.buttons objectAtIndex:i];
+        CGFloat width = [self tabBarWidth:i];
+        button.frame = CGRectMake(left, 0, width, self.bounds.size.height);
+        left += width;
     }
-    
-    CGFloat maxTotalWidth = self.buttons.count * maxItemWidth + (self.buttons.count + 1) * 2 *kXTTabBarItemMargin;
-    
-    if (maxTotalWidth < self.bounds.size.width && !self.forceLeftAligment) {
-        CGFloat averageWidth = self.bounds.size.width / self.buttons.count;
-        CGFloat centerX = averageWidth / 2;
-        for (UIButton *button in self.buttons) {
-            button.frame = CGRectMake(0, 0, maxItemWidth, self.bounds.size.height);
-            button.center = CGPointMake(centerX, self.bounds.size.height / 2);
-            centerX += averageWidth;
-        }
-        [self setContentSize:CGSizeMake(self.bounds.size.width, self.bounds.size.height)];
-    } else {
-        CGFloat left = 2 * kXTTabBarItemMargin;
-        for (UIButton *button in self.buttons) {
-            button.frame = CGRectMake(left, 0, button.bounds.size.width, self.bounds.size.height);
-            left += button.bounds.size.width + 2 * kXTTabBarItemMargin;
-        }
-        [self setContentSize:CGSizeMake(totalWidth + (self.buttons.count + 1) * 2 * kXTTabBarItemMargin, self.bounds.size.height)];
-    }
+    [self setContentSize:CGSizeMake(left, self.bounds.size.height)];
     
     if (!self.isAnimation && self.currentIndex != kXTTabBarInvalidIndex) {
         UIButton *button = [self.buttons objectAtIndex:self.currentIndex];
-        self.cursorView.frame = CGRectMake(button.center.x - (button.bounds.size.width + 2 * kXTTabBarItemMargin) / 2 , 0, button.bounds.size.width + 2 * kXTTabBarItemMargin, self.bounds.size.height);
+        CGFloat width = [self tabBarCursorWidth:self.currentIndex];
+        self.cursorView.frame = CGRectMake(button.center.x -  width / 2, 0, width, self.bounds.size.height);
     }
     
     if (self.tabBarStyle == XTTabBarStyleCursorSolid || self.tabBarStyle == XTTabBarStyleCursorHollow) {
@@ -245,7 +232,8 @@ static NSInteger kXTTabBarInvalidIndex = -1;
     
     if (self.isAnimationEnabled && preIndex != kXTTabBarInvalidIndex) {
         [UIView animateWithDuration:0.35 animations:^{
-            self.cursorView.frame = CGRectMake(nextButton.center.x - (nextButton.bounds.size.width + 2 * kXTTabBarItemMargin) / 2 , 0, nextButton.bounds.size.width + 2 *kXTTabBarItemMargin, self.bounds.size.height);
+            CGFloat width = [self tabBarCursorWidth:index];
+            self.cursorView.frame = CGRectMake(nextButton.center.x - width / 2 , 0, width, self.bounds.size.height);
         } completion:^(BOOL finished) {
             self.isAnimation = NO;
             self.currentIndex = index;
@@ -257,7 +245,8 @@ static NSInteger kXTTabBarInvalidIndex = -1;
             }
         }];
     } else {
-        self.cursorView.frame = CGRectMake(nextButton.center.x - (nextButton.bounds.size.width + 2 * kXTTabBarItemMargin) / 2 , 0, nextButton.bounds.size.width + 2 *kXTTabBarItemMargin, self.bounds.size.height);
+        CGFloat width = [self tabBarCursorWidth:index];
+        self.cursorView.frame = CGRectMake(nextButton.center.x - width / 2 , 0, width, self.bounds.size.height);
         self.isAnimation = NO;
         self.currentIndex = index;
         [nextButton setTitleColor:self.titleColorSelected forState:UIControlStateNormal];
@@ -278,6 +267,28 @@ static NSInteger kXTTabBarInvalidIndex = -1;
             [self setContentOffset:CGPointMake(nextButton.center.x - self.bounds.size.width / 2, self.contentOffset.y) animated:YES];
         }
     }
+}
+
+- (CGFloat)tabBarWidth:(NSInteger)index {
+    if (!self.forceLeftAligment) {
+        CGFloat maxWidth = 0;
+        for (NSInteger i=0; i<self.tabBarItemWidths.count; i++) {
+            if (maxWidth < [[self.tabBarItemWidths objectAtIndex:i] floatValue]) {
+                maxWidth = [[self.tabBarItemWidths objectAtIndex:i] floatValue];
+            }
+        }
+        if (maxWidth * self.buttons.count < self.bounds.size.width) {
+            return self.bounds.size.width / self.buttons.count;
+        } else {
+            return [[self.tabBarItemWidths objectAtIndex:index] floatValue];
+        }
+    } else {
+        return [[self.tabBarItemWidths objectAtIndex:index] floatValue];
+    }
+}
+
+- (CGFloat)tabBarCursorWidth:(NSInteger)index {
+    return [[self.tabBarItemWidths objectAtIndex:index] floatValue];
 }
 
 @end

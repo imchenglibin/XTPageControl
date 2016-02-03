@@ -10,6 +10,13 @@
 #import <UIKit/UIKit.h>
 #import "XTTabBarStyle.h"
 
+@protocol XTPageViewControllerDelegate <NSObject>
+
+//the custom width of tab bar item for page
+- (CGFloat)widthOfTabBarItemForPage:(NSInteger)page;
+
+@end
+
 @protocol XTPageViewControllerDataSource <NSObject>
 
 //the number of pages
@@ -31,6 +38,9 @@
 
 //the data source of XTPageViewController
 @property (weak, nonatomic) id<XTPageViewControllerDataSource> dataSource;
+
+//the delegate of XTPageViewController
+@property (weak, nonatomic) id<XTPageViewControllerDelegate> delegate;
 
 //customize the left item view of XTPageViewController, defaul will be nil
 @property (strong, nonatomic) UIView *tabBarLeftItemView;

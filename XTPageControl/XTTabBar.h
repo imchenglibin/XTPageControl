@@ -13,7 +13,7 @@
 
 @interface XTTabBar : UIView
 
-- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andStyle:(XTTabBarStyle)style;
+- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andTabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths andStyle:(XTTabBarStyle)style;
 - (void)moveToIndex:(NSInteger)index;
 
 @property (strong, nonatomic) UIView *leftItemView;

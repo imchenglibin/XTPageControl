@@ -11,7 +11,7 @@
 #import "XTPageViewController.h"
 #import "XTSubPageViewController.h"
 
-@interface XTMainViewController() <XTPageViewControllerDataSource> {
+@interface XTMainViewController() <XTPageViewControllerDataSource, XTPageViewControllerDelegate> {
     NSInteger _numberOfPages;
 }
 
@@ -30,7 +30,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 8;
+    return 9;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -41,7 +41,8 @@
                         @"XTPageControl TabBar Other Properties",
                         @"XTPageControl TabBar With Left Item",
                         @"XTPageControl TabBar With Right Item",
-                        @"XTPageControl TabBar Left And Right Item"];
+                        @"XTPageControl TabBar Left And Right Item",
+                        @"XTPageControl TabBar Custom Tab Item Width"];
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.textLabel.text = [titles objectAtIndex:indexPath.row];
     cell.textLabel.font = [UIFont systemFontOfSize:12];
@@ -140,6 +141,15 @@
             [self.navigationController pushViewController:pageViewController animated:YES];
         }
             break;
+        case 8:
+        {
+            _numberOfPages = 3;
+            XTPageViewController *pageViewController = [[XTPageViewController alloc] initWithTabBarStyle:XTTabBarStyleCursorUnderline];
+            pageViewController.dataSource = self;
+            pageViewController.delegate = self;
+            [self.navigationController pushViewController:pageViewController animated:YES];
+        }
+            break;
         default:
             break;
     }
@@ -156,6 +166,10 @@
 - (UIViewController*)constrollerOfPage:(NSInteger)page {
     XTSubPageViewController *controller = [[XTSubPageViewController alloc] init];
     return controller;
+}
+
+- (CGFloat)widthOfTabBarItemForPage:(NSInteger)page {
+    return [UIScreen mainScreen].bounds.size.width / 3;
 }
 
 @end

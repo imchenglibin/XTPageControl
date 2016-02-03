@@ -14,15 +14,17 @@
 @property (strong, nonatomic) XTTabBarScrollView *tabBarScrollView;
 @property (assign, nonatomic) XTTabBarStyle tabBarStyle;
 @property (strong, nonatomic) NSArray<NSString*> *titles;
+@property (strong, nonatomic) NSArray<NSNumber*> *tabBarItemWidths;
 
 @end
 
 @implementation XTTabBar
 
-- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andStyle:(XTTabBarStyle)style {
+- (instancetype)initWithTitles:(NSArray<NSString*>*)titles andTabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths andStyle:(XTTabBarStyle)style {
     if (self = [super init]) {
         _tabBarStyle = style;
         _titles = titles;
+        _tabBarItemWidths = tabBarItemWidths;
         [self setup];
     }
     return self;
@@ -30,7 +32,7 @@
 
 - (void)setup {
     self.backgroundColor = [UIColor whiteColor];
-    self.tabBarScrollView = [[XTTabBarScrollView alloc] initWithTitles:self.titles andStyle:self.tabBarStyle];
+    self.tabBarScrollView = [[XTTabBarScrollView alloc] initWithTitles:self.titles andTabBarItemWidths:self.tabBarItemWidths andStyle:self.tabBarStyle];
     [self addSubview:self.tabBarScrollView];
 }
 
