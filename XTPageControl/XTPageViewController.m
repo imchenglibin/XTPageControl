@@ -23,6 +23,7 @@
 @property (assign, nonatomic) BOOL forceToShowControllerWhenFirstTime;
 @property (assign, nonatomic) BOOL disableScroll;
 @property (assign, nonatomic) BOOL isFromTabBarItemWillChanged;
+@property (assign, nonatomic) BOOL isTabBarScrolling;
 @end
 
 @implementation XTPageViewController
@@ -167,6 +168,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
 
 #pragma mark tabbar delegate 
 - (void)willChanged:(NSInteger)preIndex nextIndex:(NSInteger)nextIndex {
+    self.isTabBarScrolling = YES;
     if (self.forceToShowControllerWhenFirstTime) {
         self.forceToShowControllerWhenFirstTime = NO;
         self.pageScrollView.scrollEnabled = NO;
@@ -184,6 +186,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
 
 - (void)didChanged:(NSInteger)preIndex nextIndex:(NSInteger)nextIndex {
     self.pageScrollView.scrollEnabled = YES;
+    self.isTabBarScrolling = NO;
 }
 
 #pragma mark scrollview delegate
@@ -193,7 +196,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
         [self showNextController:self.nextIndex];
         self.nextIndex = -1;
     } else {
-        if (self.currentPage != page && !self.isFromTabBarItemWillChanged) {
+        if (!self.isTabBarScrolling && self.currentPage != page && !self.isFromTabBarItemWillChanged) {
             self.disableScroll = YES;
             [self showNextController:page];
             [self.tabBar moveToIndex:page];
