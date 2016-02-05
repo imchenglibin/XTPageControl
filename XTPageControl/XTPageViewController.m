@@ -123,7 +123,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
     [self.view addSubview:self.pageScrollView];
     
     self.forceToShowControllerWhenFirstTime = YES;
-    [self.tabBar moveToIndex:0];
+    [self.tabBar moveToIndex:0 animation:NO];
 }
 
 - (XTTabBar*)createTabBar:(NSArray<NSString*>*)titles tabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths style:(XTTabBarStyle)style {
@@ -199,7 +199,7 @@ static CGFloat kXTDefaultTabBarHeight = 35;
         if (!self.isTabBarScrolling && self.currentPage != page && !self.isFromTabBarItemWillChanged) {
             self.disableScroll = YES;
             [self showNextController:page];
-            [self.tabBar moveToIndex:page];
+            [self.tabBar moveToIndex:page animation:NO];
         }
     }
 }

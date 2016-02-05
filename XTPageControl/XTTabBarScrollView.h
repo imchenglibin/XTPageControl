@@ -21,7 +21,7 @@
 @interface XTTabBarScrollView : UIScrollView
 
 - (instancetype)initWithTitles:(NSArray<NSString*>*)titles andTabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths andStyle:(XTTabBarStyle)style;
-- (void)moveToIndex:(NSInteger)index;
+- (void)moveToIndex:(NSInteger)index animation:(BOOL)animation;
 
 @property (assign, nonatomic) BOOL forceLeftAligment;
 @property (strong, nonatomic) UIColor *titleColorNormal;

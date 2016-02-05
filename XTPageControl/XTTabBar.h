@@ -14,7 +14,7 @@
 @interface XTTabBar : UIView
 
 - (instancetype)initWithTitles:(NSArray<NSString*>*)titles andTabBarItemWidths:(NSArray<NSNumber*>*) tabBarItemWidths andStyle:(XTTabBarStyle)style;
-- (void)moveToIndex:(NSInteger)index;
+- (void)moveToIndex:(NSInteger)index animation:(BOOL)animation;
 
 @property (strong, nonatomic) UIView *leftItemView;
 @property (strong, nonatomic) UIView *rightItemView;

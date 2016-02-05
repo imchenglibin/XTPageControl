@@ -143,7 +143,7 @@ static NSInteger kXTTabBarInvalidIndex = -1;
 }
 
 - (void)buttonEvent:(UIButton*)sender {
-    [self moveToIndex:sender.tag];
+    [self moveToIndex:sender.tag animation:YES];
 }
 
 - (void)setTitleColorNormal:(UIColor *)titleColorNormal {
@@ -210,7 +210,7 @@ static NSInteger kXTTabBarInvalidIndex = -1;
     }
 }
 
-- (void)moveToIndex:(NSInteger)index {
+- (void)moveToIndex:(NSInteger)index animation:(BOOL)animation{
     if (index == self.currentIndex || self.isAnimation || index < 0 || index >= self.buttons.count) {
         return;
     }
@@ -230,7 +230,7 @@ static NSInteger kXTTabBarInvalidIndex = -1;
         }
     }
     
-    if (self.isAnimationEnabled && preIndex != kXTTabBarInvalidIndex) {
+    if (animation && self.isAnimationEnabled && preIndex != kXTTabBarInvalidIndex) {
         [UIView animateWithDuration:0.35 animations:^{
             CGFloat width = [self tabBarCursorWidth:index];
             self.cursorView.frame = CGRectMake(nextButton.center.x - width / 2 , 0, width, self.bounds.size.height);

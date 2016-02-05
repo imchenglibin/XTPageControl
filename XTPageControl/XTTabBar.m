@@ -36,8 +36,8 @@
     [self addSubview:self.tabBarScrollView];
 }
 
-- (void)moveToIndex:(NSInteger)index {
-   [self.tabBarScrollView moveToIndex:index];
+- (void)moveToIndex:(NSInteger)index animation:(BOOL)animation {
+   [self.tabBarScrollView moveToIndex:index animation:animation];
 }
 
 - (void)layoutSubviews {
