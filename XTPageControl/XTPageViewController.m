@@ -111,6 +111,9 @@ static CGFloat kXTDefaultTabBarHeight = 35;
     
     self.underlineView = [[UIView alloc] init];
     self.underlineView.backgroundColor = [UIColor colorWithWhite:.9 alpha:1.0];
+    if (self.tabBarUnderlineColor) {
+        self.underlineView.backgroundColor = self.tabBarUnderlineColor;
+    }
     [self.view addSubview:self.underlineView];
     
     self.pageScrollView = [[UIScrollView alloc] init];

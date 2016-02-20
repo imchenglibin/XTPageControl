@@ -66,4 +66,7 @@
 //use this property to force the tabBar items aligment left
 @property (assign, nonatomic) BOOL forceLeftAligment;
 
+//customize the tabBar underline color
+@property (strong, nonatomic) UIColor *tabBarUnderlineColor;
+
 @end
