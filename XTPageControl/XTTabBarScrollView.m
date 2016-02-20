@@ -218,6 +218,7 @@ static NSInteger kXTTabBarInvalidIndex = -1;
     if (preIndex != kXTTabBarInvalidIndex) {
         UIButton *preButton = [self.buttons objectAtIndex:preIndex];
         [preButton setTitleColor:self.titleColorNormal forState:UIControlStateNormal];
+        preButton.titleLabel.font = [UIFont systemFontOfSize:kXTTabBarItemFontSize];
     }
     
     UIButton *nextButton = [self.buttons objectAtIndex:index];
@@ -238,6 +239,9 @@ static NSInteger kXTTabBarInvalidIndex = -1;
             self.isAnimation = NO;
             self.currentIndex = index;
             [nextButton setTitleColor:self.titleColorSelected forState:UIControlStateNormal];
+            if (self.tabBarStyle == XTTabBarStyleCursorNormal) {
+                nextButton.titleLabel.font = [UIFont systemFontOfSize:kXTTabBarItemFontSize + 2];
+            }
             if (self.tabBarScrollViewDelegate) {
                 if ([self.tabBarScrollViewDelegate respondsToSelector:@selector(didChanged:nextIndex:)]) {
                     [self.tabBarScrollViewDelegate didChanged:preIndex nextIndex:index];
@@ -250,6 +254,9 @@ static NSInteger kXTTabBarInvalidIndex = -1;
         self.isAnimation = NO;
         self.currentIndex = index;
         [nextButton setTitleColor:self.titleColorSelected forState:UIControlStateNormal];
+        if (self.tabBarStyle == XTTabBarStyleCursorNormal) {
+            nextButton.titleLabel.font = [UIFont systemFontOfSize:kXTTabBarItemFontSize + 2];
+        }
         if (self.tabBarScrollViewDelegate) {
             if ([self.tabBarScrollViewDelegate respondsToSelector:@selector(didChanged:nextIndex:)]) {
                 [self.tabBarScrollViewDelegate didChanged:preIndex nextIndex:index];

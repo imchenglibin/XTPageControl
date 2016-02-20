@@ -87,7 +87,7 @@
         case 4:
         {
             _numberOfPages = 3;
-            XTPageViewController *pageViewController = [[XTPageViewController alloc] initWithTabBarStyle:XTTabBarStyleCursorSolid];
+            XTPageViewController *pageViewController = [[XTPageViewController alloc] initWithTabBarStyle:XTTabBarStyleCursorNormal];
             pageViewController.dataSource = self;
             pageViewController.tabBarBackgroundColor = [UIColor groupTableViewBackgroundColor];
             pageViewController.tabBarTitleColorNormal = [UIColor blueColor];

@@ -13,7 +13,8 @@
 typedef NS_ENUM(NSInteger, XTTabBarStyle) {
     XTTabBarStyleCursorUnderline = 0,
     XTTabBarStyleCursorSolid = 1,
-    XTTabBarStyleCursorHollow = 2
+    XTTabBarStyleCursorHollow = 2,
+    XTTabBarStyleCursorNormal = 3
 };
 
 #endif /* XTTabBarStyle_h */
