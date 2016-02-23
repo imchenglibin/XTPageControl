@@ -69,4 +69,7 @@
 //customize the tabBar underline color
 @property (strong, nonatomic) UIColor *tabBarUnderlineColor;
 
+//reload data
+- (void)reloadData;
+
 @end

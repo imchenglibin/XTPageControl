@@ -70,6 +70,15 @@ static CGFloat kXTDefaultTabBarHeight = 35;
     [self clearCache];
 }
 
+//reload data
+- (void)reloadData {
+    [self.tabBar removeFromSuperview];
+    [self.pageScrollView removeFromSuperview];
+    [self.underlineView removeFromSuperview];
+    [self.cachedControllers removeAllObjects];
+    [self setup:self.style];
+}
+
 - (void)clearCache {
     [self.cachedControllers enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         if (obj != self.currentController) {
@@ -86,8 +95,10 @@ static CGFloat kXTDefaultTabBarHeight = 35;
 }
 
 - (void)setup:(XTTabBarStyle)style {
+    if (self.dataSource == nil) {
+        return;
+    }
     self.view.backgroundColor = [UIColor whiteColor];
-    NSAssert(self.dataSource != nil, @"XTPageViewController必须设置dataSource");
     self.nextIndex = -1;
     self.cachedControllers = [NSMutableDictionary dictionary];
     self.automaticallyAdjustsScrollViewInsets = NO;

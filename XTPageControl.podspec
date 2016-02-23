@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "XTPageControl"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "An easy solution to page controllers."
   s.homepage     = "https://github.com/imchenglibin/XTPageControl"
   s.license      = "MIT"
