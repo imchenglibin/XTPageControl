@@ -70,12 +70,19 @@ static CGFloat kXTDefaultTabBarHeight = 35;
     [self clearCache];
 }
 
-//reload data
 - (void)reloadData {
-    [self.tabBar removeFromSuperview];
-    [self.pageScrollView removeFromSuperview];
-    [self.underlineView removeFromSuperview];
-    [self.cachedControllers removeAllObjects];
+    if (self.tabBar) {
+        [self.tabBar removeFromSuperview];
+    }
+    if (self.pageScrollView) {
+        [self.pageScrollView removeFromSuperview];
+    }
+    if (self.underlineView) {
+        [self.underlineView removeFromSuperview];
+    }
+    if (self.cachedControllers) {
+        [self.cachedControllers removeAllObjects];
+    }
     [self setup:self.style];
 }
 
